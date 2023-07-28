@@ -1,5 +1,6 @@
 import axios from "axios";
 
+
 export const generateDevops = async (value?: any) => {
   try {
     //azureWorkItemTypeURL
@@ -33,3 +34,23 @@ export const generateDevops = async (value?: any) => {
     return { status: "error", data: error };
   }
 };
+
+export const fetchWorkItemTypes = ()=> {
+
+  return new Promise((resolve,reject)=>{
+    window.parent.webapi.safeAjax({
+  type: "GET",
+  url: "/_api/gyde_workitemtypes",
+  contentType: "application/json",
+  success: function (data: any, textStatus: any, xhr: any) {
+    resolve({ type: "success", data });
+  },
+  error: function (request: any, status: any, thrown: any) {
+    reject({ type: "error", status: request.status });
+  },
+  });
+  
+  
+  
+  })
+}
