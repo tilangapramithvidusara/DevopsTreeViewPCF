@@ -45,6 +45,7 @@
   
   <ItemGroup>
     <ProjectReference Include="../DevopsTreePCF.pcfproj" />
+    <ProjectReference Include="..\DevopsTreePCF.pcfproj" />
   </ItemGroup>
 
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
