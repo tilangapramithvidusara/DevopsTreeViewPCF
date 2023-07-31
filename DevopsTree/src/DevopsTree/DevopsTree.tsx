@@ -8,219 +8,35 @@ declare global {
     webapi: any;
   }
 }
-const treeData1: DataNode[] = [
-  {
-    title: 'parent 1',
-    key: '0-0',
-    children: [
-      {
-        title: 'parent 1-0',
-        key: '0-0-0',
-        // disabled: true,
-        children: [
-          {
-            title: 'leaf',
-            key: '0-0-0-0',
-            // disableCheckbox: true,
-          },
-          {
-            title: 'leaf',
-            key: '0-0-0-1',
-          },
-        ],
-      },
-      {
-        title: 'parent 1-1',
-        key: '0-0-1',
-        children: [{ title: <span style={{ color: '#1677ff' }}>sss</span>, key: '0-0-1-0' }],
-      },
-    ],
-  },
-  {title: 'parent 2',
-    key: '0-1',
-    children: [
-      {
-        title: 'parent 1-0',
-        key: '0-0-1',
-      // disabled: true,
-        children: [
-          {
-            title: 'leaf',
-            key: '0-0-0-0',
-           // disableCheckbox: true,
-          },
-          {
-            title: 'leaf',
-            key: '0-0-0-1',
-          },
-        ],
-      },
-    ]
-    }
-];
-
-
-// const sampleData = [
+// const treeData: DataNode[] = [
 //   {
-//       "workitemtypeid@OData.Community.Display.V1.AttributeName": "gyde_workitemtypeid",
-//       "workitemtypeid": "157c2482-c4dc-ed11-a7c6-6045bdd0ef22",
-//       "description@OData.Community.Display.V1.AttributeName": "gyde_workitemdescription",
-//       "description": "Description",
-//       "workitemtype@OData.Community.Display.V1.AttributeName": "gyde_name",
-//       "workitemtype": "Epic",
-//       "title@OData.Community.Display.V1.AttributeName": "gyde_title",
-//       "title": "W1-edited",
-//       "state@OData.Community.Display.V1.AttributeName": "statecode",
-//       "state@OData.Community.Display.V1.FormattedValue": "Active",
-//       "state": 0,
-//       "workitemid@OData.Community.Display.V1.AttributeName": "gyde_surveyworkitemid",
-//       "workitemid": "787960f2-2326-ee11-9965-6045bdd0ef22",
-//       "sequanceid@OData.Community.Display.V1.AttributeName": "gyde_workitemtemplatesequenceid",
-//       "sequanceid": "777960f2-2326-ee11-9965-6045bdd0ef22",
-//       "sequance@OData.Community.Display.V1.AttributeName": "gyde_sequence",
-//       "sequance@OData.Community.Display.V1.FormattedValue": "3",
-//       "sequance": 3,
-//       "internalid@OData.Community.Display.V1.AttributeName": "gyde_relatedsurveyitemid",
-//       "internalid": "7125"
+//     title: 'parent 1',
+//     key: '0-0',
+//     children: [
+//       {
+//         title: 'parent 1-0',
+//         key: '0-0-0',
+//         disabled: true,
+//         children: [
+//           {
+//             title: 'leaf',
+//             key: '0-0-0-0',
+//             disableCheckbox: true,
+//           },
+//           {
+//             title: 'leaf',
+//             key: '0-0-0-1',
+//           },
+//         ],
+//       },
+//       {
+//         title: 'parent 1-1',
+//         key: '0-0-1',
+//         children: [{ title: <span style={{ color: '#1677ff' }}>sss</span>, key: '0-0-1-0' }],
+//       },
+//     ],
 //   },
-  
-//   {
-//       "workitemtypeid@OData.Community.Display.V1.AttributeName": "gyde_workitemtypeid",
-//       "workitemtypeid": "5b7a6e8a-c4dc-ed11-a7c6-6045bdd0ef22",
-//       "internalid@OData.Community.Display.V1.AttributeName": "gyde_relatedsurveyitemid",
-//       "internalid": "7125_7126",
-//       "workitemtype@OData.Community.Display.V1.AttributeName": "gyde_name",
-//       "workitemtype": "Requirement",
-//       "title@OData.Community.Display.V1.AttributeName": "gyde_title",
-//       "title": "SW1",
-//       "state@OData.Community.Display.V1.AttributeName": "statecode",
-//       "state@OData.Community.Display.V1.FormattedValue": "Active",
-//       "state": 0,
-//       "workitemid@OData.Community.Display.V1.AttributeName": "gyde_surveyworkitemid",
-//       "workitemid": "9af7ce22-2426-ee11-9965-6045bdd0ef22",
-//       "sequanceid@OData.Community.Display.V1.AttributeName": "gyde_workitemtemplatesequenceid",
-//       "sequanceid": "99f7ce22-2426-ee11-9965-6045bdd0ef22",
-//       "sequance@OData.Community.Display.V1.AttributeName": "gyde_sequence",
-//       "sequance@OData.Community.Display.V1.FormattedValue": "5",
-//       "sequance": 5
-//   },
-//   {
-//       "workitemtypeid@OData.Community.Display.V1.AttributeName": "gyde_workitemtypeid",
-//       "workitemtypeid": "5c7a6e8a-c4dc-ed11-a7c6-6045bdd0ef22",
-//       "parentworkitem@OData.Community.Display.V1.AttributeName": "gyde_parentworkitemsequence",
-//       "parentworkitem@OData.Community.Display.V1.FormattedValue": "W1",
-//       "parentworkitem@Microsoft.Dynamics.CRM.lookuplogicalname": "gyde_workitemtemplatesequence",
-//       "parentworkitem": "777960f2-2326-ee11-9965-6045bdd0ef22",
-//       "workitemtype@OData.Community.Display.V1.AttributeName": "gyde_name",
-//       "workitemtype": "Task",
-//       "title@OData.Community.Display.V1.AttributeName": "gyde_title",
-//       "title": "SW2",
-//       "state@OData.Community.Display.V1.AttributeName": "statecode",
-//       "state@OData.Community.Display.V1.FormattedValue": "Active",
-//       "state": 0,
-//       "workitemid@OData.Community.Display.V1.AttributeName": "gyde_surveyworkitemid",
-//       "workitemid": "1f1c3b39-2426-ee11-9965-6045bdd0ef22",
-//       "sequanceid@OData.Community.Display.V1.AttributeName": "gyde_workitemtemplatesequenceid",
-//       "sequanceid": "1e1c3b39-2426-ee11-9965-6045bdd0ef22",
-//       "sequance@OData.Community.Display.V1.AttributeName": "gyde_sequence",
-//       "sequance@OData.Community.Display.V1.FormattedValue": "3",
-//       "sequance": 3,
-//       "internalid@OData.Community.Display.V1.AttributeName": "gyde_relatedsurveyitemid",
-//       "internalid": "7125_7127"
-//   },
-//   {
-//       "workitemtypeid@OData.Community.Display.V1.AttributeName": "gyde_workitemtypeid",
-//       "workitemtypeid": "68f77c92-c4dc-ed11-a7c6-6045bdd0ef22",
-//       "parentworkitem@OData.Community.Display.V1.AttributeName": "gyde_parentworkitemsequence",
-//       "parentworkitem@OData.Community.Display.V1.FormattedValue": "LastW",
-//       "parentworkitem@Microsoft.Dynamics.CRM.lookuplogicalname": "gyde_workitemtemplatesequence",
-//       "parentworkitem": "a69a3e5c-2d26-ee11-9965-6045bdd0ef22",
-//       "workitemtype@OData.Community.Display.V1.AttributeName": "gyde_name",
-//       "workitemtype": "User Story",
-//       "title@OData.Community.Display.V1.AttributeName": "gyde_title",
-//       "title": "SP2",
-//       "state@OData.Community.Display.V1.AttributeName": "statecode",
-//       "state@OData.Community.Display.V1.FormattedValue": "Active",
-//       "state": 0,
-//       "workitemid@OData.Community.Display.V1.AttributeName": "gyde_surveyworkitemid",
-//       "workitemid": "e0b8bd67-2c26-ee11-9965-6045bdd0ef22",
-//       "sequanceid@OData.Community.Display.V1.AttributeName": "gyde_workitemtemplatesequenceid",
-//       "sequanceid": "dfb8bd67-2c26-ee11-9965-6045bdd0ef22",
-//       "sequance@OData.Community.Display.V1.AttributeName": "gyde_sequence",
-//       "sequance@OData.Community.Display.V1.FormattedValue": "1",
-//       "sequance": 1,
-//       "internalid@OData.Community.Display.V1.AttributeName": "gyde_relatedsurveyitemid",
-//       "internalid": "7125"
-//   },
-//   {
-//       "workitemtypeid@OData.Community.Display.V1.AttributeName": "gyde_workitemtypeid",
-//       "workitemtypeid": "68f77c92-c4dc-ed11-a7c6-6045bdd0ef22",
-//       "parentworkitem@OData.Community.Display.V1.AttributeName": "gyde_parentworkitemsequence",
-//       "parentworkitem@OData.Community.Display.V1.FormattedValue": "W2",
-//       "parentworkitem@Microsoft.Dynamics.CRM.lookuplogicalname": "gyde_workitemtemplatesequence",
-//       "parentworkitem": "d6692101-2426-ee11-9965-6045bdd0ef22",
-//       "workitemtype@OData.Community.Display.V1.AttributeName": "gyde_name",
-//       "workitemtype": "User Story",
-//       "title@OData.Community.Display.V1.AttributeName": "gyde_title",
-//       "title": "LastW",
-//       "state@OData.Community.Display.V1.AttributeName": "statecode",
-//       "state@OData.Community.Display.V1.FormattedValue": "Active",
-//       "state": 0,
-//       "workitemid@OData.Community.Display.V1.AttributeName": "gyde_surveyworkitemid",
-//       "workitemid": "a79a3e5c-2d26-ee11-9965-6045bdd0ef22",
-//       "sequanceid@OData.Community.Display.V1.AttributeName": "gyde_workitemtemplatesequenceid",
-//       "sequanceid": "a69a3e5c-2d26-ee11-9965-6045bdd0ef22",
-//       "sequance@OData.Community.Display.V1.AttributeName": "gyde_sequence",
-//       "sequance@OData.Community.Display.V1.FormattedValue": "1",
-//       "sequance": 1,
-//       "internalid@OData.Community.Display.V1.AttributeName": "gyde_relatedsurveyitemid",
-//       "internalid": "7125"
-//   },
-//   {
-//       "workitemtypeid@OData.Community.Display.V1.AttributeName": "gyde_workitemtypeid",
-//       "workitemtypeid": "187c2482-c4dc-ed11-a7c6-6045bdd0ef22",
-//       "internalid@OData.Community.Display.V1.AttributeName": "gyde_relatedsurveyitemid",
-//       "internalid": "7125",
-//       "workitemtype@OData.Community.Display.V1.AttributeName": "gyde_name",
-//       "workitemtype": "Feature",
-//       "title@OData.Community.Display.V1.AttributeName": "gyde_title",
-//       "title": "TestParentRDEdit",
-//       "state@OData.Community.Display.V1.AttributeName": "statecode",
-//       "state@OData.Community.Display.V1.FormattedValue": "Active",
-//       "state": 0,
-//       "workitemid@OData.Community.Display.V1.AttributeName": "gyde_surveyworkitemid",
-//       "workitemid": "43d9623a-bc26-ee11-9965-6045bdd0ef22",
-//       "sequanceid@OData.Community.Display.V1.AttributeName": "gyde_workitemtemplatesequenceid",
-//       "sequanceid": "42d9623a-bc26-ee11-9965-6045bdd0ef22",
-//       "sequance@OData.Community.Display.V1.AttributeName": "gyde_sequence",
-//       "sequance@OData.Community.Display.V1.FormattedValue": "4",
-//       "sequance": 4
-//   },
-//   {
-//       "workitemtypeid@OData.Community.Display.V1.AttributeName": "gyde_workitemtypeid",
-//       "workitemtypeid": "5b7a6e8a-c4dc-ed11-a7c6-6045bdd0ef22",
-//       "parentworkitem@OData.Community.Display.V1.AttributeName": "gyde_parentworkitemsequence",
-//       "parentworkitem@OData.Community.Display.V1.FormattedValue": "TestParentRD",
-//       "parentworkitem@Microsoft.Dynamics.CRM.lookuplogicalname": "gyde_workitemtemplatesequence",
-//       "parentworkitem": "42d9623a-bc26-ee11-9965-6045bdd0ef22",
-//       "workitemtype@OData.Community.Display.V1.AttributeName": "gyde_name",
-//       "workitemtype": "Requirement",
-//       "title@OData.Community.Display.V1.AttributeName": "gyde_title",
-//       "title": "RD903",
-//       "state@OData.Community.Display.V1.AttributeName": "statecode",
-//       "state@OData.Community.Display.V1.FormattedValue": "Active",
-//       "state": 0,
-//       "workitemid@OData.Community.Display.V1.AttributeName": "gyde_surveyworkitemid",
-//       "workitemid": "5bb65560-7727-ee11-9965-6045bdd0ef22",
-//       "sequanceid@OData.Community.Display.V1.AttributeName": "gyde_workitemtemplatesequenceid",
-//       "sequanceid": "5ab65560-7727-ee11-9965-6045bdd0ef22",
-//       "sequance@OData.Community.Display.V1.AttributeName": "gyde_sequence",
-//       "sequance@OData.Community.Display.V1.FormattedValue": "2",
-//       "sequance": 2,
-//       "internalid@OData.Community.Display.V1.AttributeName": "gyde_relatedsurveyitemid",
-//       "internalid": "7129"
-//   }
-// ]
+// ];
 
 const internalIds:any = [
   {
@@ -261,7 +77,7 @@ const workItems:any = {"results":  [
       "parentworkitem": "",
       "description": "RDW1",
       "workitemid": "d705a3ed-3b2c-ee11-bdf4-6045bd0fcbc6",
-      "priority": "🟥 1",
+      "priority": "1",
       "workitemresource": "674ae973-c4dc-ed11-a7c6-6045bdd0ef22",
       "designclassification": "Configuration",
       "workitemmodule": "",
@@ -618,43 +434,40 @@ const _navigateUrl = queryParameters.get("returnto");
 const [checkedKeys, setCheckedKeys] = useState([]);
 const [dataAfterSave, setDataAfterSave] = useState([]);
 const [filteredTreeData, setFilteredTreeData] = useState([]);
-const [workItemsBySurveyId, setWorkItemsBySurveyId] = useState<any>([workItems?.results]);
-const [allInternalIdsBySurveyId, setAllInternalIdsBySurveyId] = useState([internalIds]);
+const [workItemsBySurveyId, setWorkItemsBySurveyId] = useState<any>([]);
+const [allInternalIdsBySurveyId, setAllInternalIdsBySurveyId] = useState<any>([]);
 
-const setAllKeysChecked = (keys?:any) => {
-  console.log("keys", keys);
+const setAllKeysChecked = (loadedKeys:any, {event, node}:any ) => {
+  console.log("keys", loadedKeys);
+  console.log("event...", event, node);
   // setCheckedKeys(keys);
 }
 
   useEffect(()=>{
-
   fetchAllInternalIdsByBusinessSurveyId("")
     .then((res)=>{
       console.log("internal ids",res);
       const data:any = res?.map((item:any)=>JSON.parse(item?.data));
-      // setAllInternalIdsBySurveyId(data?.flatMap((obj:any) => obj.results));
+      setAllInternalIdsBySurveyId(data?.flatMap((obj:any) => obj.results));
     })
     .catch((err)=>console.log("error getting all ids",err));
 
   fetchWorkItemsByBusinessSurveyId("")
     .then((val:any)=>{
-      console.log("response..", val);
-      const value = val;
-      console.log("trim only value",value)
       const workItems = val?.data;
-      // workItemsBySurveyId(workItems);
-      console.log("workItems..", workItems);
-      const allWorkItems = val?.data?.results;
-      console.log("all workItems..", allWorkItems);
       const jsonData = JSON.parse(workItems);
-      console.log("converted data..", jsonData)
+      setWorkItemsBySurveyId(jsonData?.results);
     })
     .catch((err)=>console.log("error getting work items",err));
-
-    const filteredData = workItemsBySurveyId?.filter((item:any)=> allInternalIdsBySurveyId?.find((id:any)=> id?.internalid ==item?.internalid));
-    setFilteredTreeData(filteredData);
-    console.log("filteredData", filteredData);
   },[])
+
+  useEffect(()=>{
+    const internalIds = allInternalIdsBySurveyId?.map((item:any)=>item?.internalid);
+    const filteredData = workItemsBySurveyId?.filter((item:any)=> internalIds?.includes(item?.internalid));
+    setFilteredTreeData(filteredData);
+    console.log("filtered data....", filteredData);
+  },[allInternalIdsBySurveyId])
+
   console.log("workItemsBySurveyId",workItemsBySurveyId);
   console.log("allInternalIdsBySurveyId", allInternalIdsBySurveyId);
   console.log("filteredData", filteredTreeData);
@@ -673,25 +486,19 @@ const setAllKeysChecked = (keys?:any) => {
     console.log("console....", result);
   }
 
-  // const checkAllKeys = async() :any=> {
-
-  // }
-
   // Helper function to create a new node
-const createNode =(title:any, key:any, rest:any,children?:any) =>{
-  return { title, key,rest, children: children || [] };
-}
+  const createNode =(title:any, key:any, rest:any,children?:any) =>{
+    return { title, key,rest, children: children || [] };
+  }
 
 // Function to construct the tree recursively
 function constructTree(data:any, parentId:any) {
   const childrenData = data.filter((item:any) => item.parentworkitem === parentId);
 
   const childrenNodes = childrenData.map((child:any) => {
-    const { title, workitemtypeid,...rest } = child;
-    const newNode = createNode(title, workitemtypeid, rest);
-    if(child?.sequanceid){
-      newNode.children = constructTree(data, child.sequanceid);
-    }
+    const { title, workitemid,...rest } = child;
+    const newNode = createNode(title, workitemid, rest);
+    newNode.children = constructTree(data, child.sequanceid);
  // Recursively construct children
     return newNode;
   });
@@ -713,19 +520,17 @@ const _dataSource = [...topLevelNodes,...filteredData]
 const treeData = _dataSource.map((item:any) => {
   const { title, workitemid,...rest } = item;
   const newNode = createNode(title, workitemid,rest);
-  // if(item?.sequanceid){
-    newNode.children = constructTree(filteredTreeData, item.sequanceid);
-  // }
+  newNode.children = constructTree(filteredTreeData, item.sequanceid);
   return newNode;
 });
 
 const convertObject = (data:any) => {
-  const result = data.map((item:any) => {
+  const result = data?.map((item:any) => {
     const { title, key } = item;
     const newNode = { title, key, children: [] };
 
     if (item.children.length > 0) {
-      newNode.children = convertObject(item.children);
+      newNode.children = convertObject(item?.children);
     }
 
     return newNode;
@@ -735,13 +540,11 @@ const convertObject = (data:any) => {
 };
 
 const outputObject = convertObject(treeData);
-console.log(outputObject);
-console.log(treeData);
+console.log("outputObject",outputObject);
+console.log("treeData",treeData);
 
 useEffect(()=> {
   fetchWorkItemTypes().then((res)=> console.log("res",res)).catch((err:any)=> console.log(err))
-  
-  
 },[])
 
   return (
