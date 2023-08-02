@@ -2,6 +2,7 @@ import { Button, Tree } from 'antd';
 import type { DataNode, TreeProps } from 'antd/es/tree';
 import React, { useEffect, useState } from 'react';
 import { fetchAllInternalIdsByBusinessSurveyId, fetchWorkItemTypes, fetchWorkItemsByBusinessSurveyId, generateDevops } from '../api/Api';
+import { findNodeAndRelations } from '../helper/GetParentNode';
 
 declare global {
   interface Window {
@@ -434,8 +435,10 @@ const _navigateUrl = queryParameters.get("returnto");
 const [checkedKeys, setCheckedKeys] = useState([]);
 const [dataAfterSave, setDataAfterSave] = useState([]);
 const [filteredTreeData, setFilteredTreeData] = useState([]);
-const [workItemsBySurveyId, setWorkItemsBySurveyId] = useState<any>([]);
-const [allInternalIdsBySurveyId, setAllInternalIdsBySurveyId] = useState<any>([]);
+const [workItemsBySurveyId, setWorkItemsBySurveyId] = useState<any>(workItems?.results);
+const [allInternalIdsBySurveyId, setAllInternalIdsBySurveyId] = useState<any>(internalIds);
+const [selectedNodes, setSelectedNodes] = useState<any>([]);
+const [halfSelectedNodes, setHalfSelectedNodes] = useState<any>([]);
 
 const setAllKeysChecked = (loadedKeys:any, {event, node}:any ) => {
   console.log("keys", loadedKeys);
@@ -472,18 +475,42 @@ const setAllKeysChecked = (loadedKeys:any, {event, node}:any ) => {
   console.log("allInternalIdsBySurveyId", allInternalIdsBySurveyId);
   console.log("filteredData", filteredTreeData);
 
-  const onSelect: TreeProps['onSelect'] = (selectedKeys, info) => {
-    console.log('selected', selectedKeys, info.node);
-  };
+  // const onSelect: TreeProps['onSelect'] = (selectedKeys, info) => {
+  //   console.log('selected', selectedKeys, info.node);
+  //   const nodesDetails = info?.node;
+  //   if(nodesDetails){
+
+  //   }
+  // };
 
   const onCheck: TreeProps['onCheck'] = (checkedKeys, info) => {
-    console.log('onCheck', checkedKeys, info.node);
+    console.log('onCheck', checkedKeys, info?.checkedNodes,"info..",info);
+    setSelectedNodes(info?.checkedNodes);
+    setHalfSelectedNodes(info?.halfCheckedKeys);
   };
 
   const handleMigrateToDevops = async() => {
-    const result = await generateDevops();
+    
+    const checkedObj = filteredTreeData?.filter((node:any)=> selectedNodes?.includes(node?.workitemid));
+    console.log("checked objects for migration:", checkedObj);
+    // create functionality....
+    // To filter the parent nodes....
+    const parentNodes = selectedNodes?.filter((item:any)=> !item?.rest?.parentworkitem);
+    console.log("parentNodes", parentNodes);
+    console.log("halfSelectedNodes", halfSelectedNodes);
+    // To get the half checked nodes with parent.....
+    // const filteredNodes = halfSelectedNodes;
+    console.log("selectedNodes..", selectedNodes);
+    const halfCheckedData = halfSelectedNodes?.map((item:any)=>findNodeAndRelations(treeData,item));
+    console.log("half checked data..", halfCheckedData);
+
+    const result = await parentNodes?.map((item:any)=>{
+       generateDevops(item, false);
+    }); 
 
     console.log("console....", result);
+    //  update functionality ..... 
+
   }
 
   // Helper function to create a new node
@@ -554,7 +581,7 @@ useEffect(()=> {
         // defaultExpandedKeys={['0-0-0', '0-0-1']}
         // defaultSelectedKeys={['0-0-0', '0-0-1']}
         // defaultCheckedKeys={['0-0-0', '0-0-1']}
-        onSelect={onSelect}
+        // onSelect={onSelect}
         onCheck={onCheck}
         treeData={treeData}
         onLoad={setAllKeysChecked}

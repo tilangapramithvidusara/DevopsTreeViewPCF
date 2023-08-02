@@ -1,36 +1,58 @@
 import axios from "axios";
 
 
-export const generateDevops = async (value?: any) => {
+export const generateDevops = async (value?: any, isChild?:boolean) => {
   try {
-    //azureWorkItemTypeURL
-    const result = await axios.post(
-      "https://seerv2sample2.azurewebsites.net/api/GetWorkItemTypes?code=eZ8HwfEwRhr3EMahUUgKUz44rtzwwtaHss-lHwReYpS2AzFuDdbXow==",
-      {
+      console.log("parentNode...", value );
+      const saveParentObj = {
         "organizationUri": "https://dev.azure.com/SEERTEST2",
-        "personalAccessToken": "c7b2ycmt27ph6wo4b2grqiasffiynzuz3k6srhvujbyfrtzmoioq",
+        "personalAccessToken": "lx3ojrtzlq4r2gwiqa7mfchzo4ztkxbx5gbdur6vegqlffjzow7q",
         "projectName": "TestMyAgile",
-        "workItemType":"Epic",
-        "reproStep":"1234",
-        "priority":"1",
-        "severity":"1",
-        "title":"Work Item Title",        "parent":"https://dev.azure.com/SEERTEST2/74c83c28-aad3-4e58-bd88-129ed531eb02/_apis/wit/workItems/118" 
-    } 
-    );
-    console.log("GetWorkItemTypes =========> ", result);
-    if (result?.status === 200) {
-      if (result?.data?.StatusCode === 200) {
-        return { status: "success", data: result?.data };
-      } else if (result?.data?.StatusCode === 401) {
-        return { status: "error", data: result?.data };
-      } else {
-        return { status: "error", data: result?.data };
+        "workItemType":value?.rest?.workitemtype,
+        "fieldData":Object?.keys(value?.rest)?.map((attributes:any)=>{
+         return { 
+          name : attributes,
+          value:value?.rest[attributes],
+          referencePath:"" ,
+        }
+        })
+    };
+
+      const saveChildObj = {
+        "organizationUri": "https://dev.azure.com/SEERTEST2",
+        "personalAccessToken": "lx3ojrtzlq4r2gwiqa7mfchzo4ztkxbx5gbdur6vegqlffjzow7q",
+        "projectName": "TestMyAgile",
+        "workItemType":value?.rest?.workitemtype,
+        "fieldData":Object?.keys(value?.rest)?.map((attributes:any)=>{
+          return { 
+           name : attributes,
+           value:value?.rest[attributes],
+           referencePath:"" ,
+         }
+         }),
+         "parent":"",
+    };
+      // Make an API call to save the parent node data here
+      const response = await axios.post('https://seerv2sample2.azurewebsites.net/api/GetWorkItemTypes?code=eZ8HwfEwRhr3EMahUUgKUz44rtzwwtaHss-lHwReYpS2AzFuDdbXow==',isChild ? saveChildObj : saveParentObj);
+      console.log('Parent node saved:', response);
+      // Get the ID of the saved parent node
+      const parentId = response.data.id;
+      // Update the parent node's key with the ID
+      value.key = parentId;
+      console.log("saved as ",isChild ? "child"+ saveChildObj : "parent" + saveParentObj );
+
+      // Recursively save children nodes
+      for (const childNode of value.children) {
+        console.log("childNode", childNode);
+        if(value?.children?.length> 0){
+          // check it has children if so need to save as parent
+          await generateDevops(childNode, false);
+        }else{
+          await generateDevops(childNode, true);
+        }
       }
-    } else {
-      return { status: "error", data: "Something Went Wrong..!" };
-    }
   } catch (error) {
-    console.log("GetWorkItemTypes ===========", error);
+    console.log("Save  WorkItemTypes ===========", error);
     return { status: "error", data: error };
   }
 };
@@ -51,24 +73,6 @@ export const fetchWorkItemTypes = ()=> {
   });
   })
 }
-
-// export const fetchWorkItemsByBusinessSurveyId = async(id:string) => {
-//   id = '73e7d54d-7c03-ee11-8f6e-6045bd0fcbc6';
-//   try {
-//     const result = await fetch(`https://partnerstudioportaluk.powerappsportals.com/en-US/getsurveyworkItems/?type=workitem&id=${id}`).then((val)=>{
-//       console.log("fetch value", val.json());
-//     })
-//     console.log("GetWorkItemTypesByBusinessSurveyId ===========", result);
-//     // if (result?.status === 200) {
-//     //   return { status: "success", data: result?.data };
-//     // }else {
-//     //   return { status: "error", data: "Something Went Wrong..!" };
-//     // }
-//   } catch (error) {
-//     console.log("GetWorkItemTypesByBusinessSurveyId ===========", error);
-//     return { status: "error", data: error };
-//   }
-// }
 
 export const fetchWorkItemsByBusinessSurveyId = (id:string)=> {
   id = '73e7d54d-7c03-ee11-8f6e-6045bd0fcbc6';
@@ -114,28 +118,3 @@ export const fetchAllInternalIdsByBusinessSurveyId =(id:string) => {
 
   return Promise.all(promises);
 }
-
-// export const fetchAllInternalIdsByBusinessSurveyId = async(id:string) => {
-//   id = '73e7d54d-7c03-ee11-8f6e-6045bd0fcbc6';
-//   try {
-//     const chapterIds = await axios.post(`https://partnerstudioportaluk.powerappsportals.com/en-US/getsurveyworkItems/?type=chapters&id=${id}`);
-//     const sectionIds = await axios.post(`https://partnerstudioportaluk.powerappsportals.com/en-US/getsurveyworkItems/?type=sections&id=${id}`);
-//     const questionIds = await axios.post(`https://partnerstudioportaluk.powerappsportals.com/en-US/getsurveyworkItems/?type=questions&id=${id}`);
-//     console.log("GetWorkItemTypesByBusinessSurveyId ===========", chapterIds, sectionIds, questionIds);
-//     Promise.all([chapterIds,sectionIds,questionIds]).then((value)=>{
-//       console.log("all internal ids value",value);
-//       return value;
-//     }).catch((error)=>{
-//       return { status: "error", data: "Something Went Wrong..!", error:error}
-//     })
-//     // if (result?.status === 200) {
-//     //   return { status: "success", data: result?.data };
-//     // }else {
-//     //   return { status: "error", data: "Something Went Wrong..!" };
-//     // }
-//   } catch (error) {
-//     console.log("GetWorkItemTypesByBusinessSurveyId ===========", error);
-//     return { status: "error", data: error };
-//   }
-
-// }
