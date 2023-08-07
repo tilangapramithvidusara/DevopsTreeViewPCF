@@ -9,6 +9,11 @@ declare global {
     webapi: any;
   }
 }
+
+const _AEEEE:any =[{"key":"Epic","targetTable":"Epic","value":[{"key":13,"sourceWorkItem":"Title","devopsWorkItem":"Title","dropdown":[],"mapping":"","enable":false,"defaultOptionList":[],"isText":true,"isSelected":true,"fieldReferenceName":"System.Title","isSavedType":"saved"},{"key":14,"sourceWorkItem":"Work item type","devopsWorkItem":"Work item type","dropdown":[],"mapping":"","enable":false,"defaultOptionList":[],"isText":true,"isSelected":true,"fieldReferenceName":"System.WorkItemType","isSavedType":"saved"},{"key":15,"sourceWorkItem":"Parent Work Item","devopsWorkItem":"Parent Work Item","dropdown":[],"mapping":"","enable":false,"defaultOptionList":[],"isText":true,"isSelected":true,"fieldReferenceName":"","isSavedType":"saved"},{"key":0,"sourceWorkItem":"Description","dropdown":[{"key":0,"dropdownValue":"Activated By","option":[],"isPickList":false,"fieldReferenceName":"Microsoft.VSTS.Common.ActivatedBy"},{"key":1,"dropdownValue":"Area Path","option":[],"isPickList":false,"fieldReferenceName":"System.AreaPath"},{"key":2,"dropdownValue":"Assigned To","option":[],"isPickList":false,"fieldReferenceName":"System.AssignedTo"},{"key":3,"dropdownValue":"Authorized As","option":[],"isPickList":false,"fieldReferenceName":"System.AuthorizedAs"},{"key":4,"dropdownValue":"Board Column","option":[],"isPickList":false,"fieldReferenceName":"System.BoardColumn"},{"key":5,"dropdownValue":"Board Lane","option":[],"isPickList":false,"fieldReferenceName":"System.BoardLane"},{"key":6,"dropdownValue":"Changed By","option":[],"isPickList":false,"fieldReferenceName":"System.ChangedBy"},{"key":7,"dropdownValue":"Closed By","option":[],"isPickList":false,"fieldReferenceName":"Microsoft.VSTS.Common.ClosedBy"},{"key":8,"dropdownValue":"Created By","option":[],"isPickList":false,"fieldReferenceName":"System.CreatedBy"},{"key":9,"dropdownValue":"Description","option":[],"isPickList":false,"fieldReferenceName":"System.Description"},{"key":10,"dropdownValue":"History","option":[],"isPickList":false,"fieldReferenceName":"System.History"},{"key":11,"dropdownValue":"Iteration Path","option":[],"isPickList":false,"fieldReferenceName":"System.IterationPath"},{"key":12,"dropdownValue":"Node Name","option":[],"isPickList":false,"fieldReferenceName":"System.NodeName"},{"key":13,"dropdownValue":"Reason","option":[],"isPickList":false,"fieldReferenceName":"System.Reason"},{"key":14,"dropdownValue":"Resolved By","option":[],"isPickList":false,"fieldReferenceName":"Microsoft.VSTS.Common.ResolvedBy"},{"key":15,"dropdownValue":"State","option":[],"isPickList":false,"fieldReferenceName":"System.State"},{"key":16,"dropdownValue":"Tags","option":[],"isPickList":false,"fieldReferenceName":"System.Tags"},{"key":17,"dropdownValue":"Team Project","option":[],"isPickList":false,"fieldReferenceName":"System.TeamProject"}],"mapping":"","enable":false,"defaultOptionList":[],"isText":false,"isSelected":false,"isPickListComplete":false,"pickListArr":[],"isSavedType":"saved","fieldReferenceName":"System.Description"},{"key":1,"sourceWorkItem":"Build estimate (hrs)","dropdown":[{"key":0,"dropdownValue":"Area ID","option":[],"isPickList":false,"fieldReferenceName":"System.AreaId"},{"key":1,"dropdownValue":"Attached File Count","option":[],"isPickList":false,"fieldReferenceName":"System.AttachedFileCount"},{"key":2,"dropdownValue":"Comment Count","option":[],"isPickList":false,"fieldReferenceName":"System.CommentCount"},{"key":3,"dropdownValue":"External Link Count","option":[],"isPickList":false,"fieldReferenceName":"System.ExternalLinkCount"},{"key":4,"dropdownValue":"Hyperlink Count","option":[],"isPickList":false,"fieldReferenceName":"System.HyperLinkCount"},{"key":5,"dropdownValue":"ID","option":[],"isPickList":false,"fieldReferenceName":"System.Id"},{"key":6,"dropdownValue":"Iteration ID","option":[],"isPickList":false,"fieldReferenceName":"System.IterationId"},{"key":7,"dropdownValue":"Parent","option":[],"isPickList":false,"fieldReferenceName":"System.Parent"},{"key":8,"dropdownValue":"Priority","option":[],"isPickList":false,"fieldReferenceName":"Microsoft.VSTS.Common.Priority"},{"key":9,"dropdownValue":"Related Link Count","option":[],"isPickList":false,"fieldReferenceName":"System.RelatedLinkCount"},{"key":10,"dropdownValue":"Remote Link Count","option":[],"isPickList":false,"fieldReferenceName":"System.RemoteLinkCount"},{"key":11,"dropdownValue":"Rev","option":[],"isPickList":false,"fieldReferenceName":"System.Rev"},{"key":12,"dropdownValue":"Stack Rank","option":[],"isPickList":false,"fieldReferenceName":"Microsoft.VSTS.Common.StackRank"},{"key":13,"dropdownValue":"Watermark","option":[],"isPickList":false,"fieldReferenceName":"System.Watermark"}],"mapping":"","enable":false,"defaultOptionList":[],"isText":false,"isSelected":true,"isPickListComplete":false,"pickListArr":[],"isSavedType":"saved","fieldReferenceName":"System.AreaId","devopsWorkItem":"Area ID"},{"key":2,"sourceWorkItem":"Build estimate (pts)","dropdown":[{"key":0,"dropdownValue":"Area ID","option":[],"isPickList":false,"fieldReferenceName":"System.AreaId"},{"key":1,"dropdownValue":"Attached File Count","option":[],"isPickList":false,"fieldReferenceName":"System.AttachedFileCount"},{"key":2,"dropdownValue":"Comment Count","option":[],"isPickList":false,"fieldReferenceName":"System.CommentCount"},{"key":3,"dropdownValue":"External Link Count","option":[],"isPickList":false,"fieldReferenceName":"System.ExternalLinkCount"},{"key":4,"dropdownValue":"Hyperlink Count","option":[],"isPickList":false,"fieldReferenceName":"System.HyperLinkCount"},{"key":5,"dropdownValue":"ID","option":[],"isPickList":false,"fieldReferenceName":"System.Id"},{"key":6,"dropdownValue":"Iteration ID","option":[],"isPickList":false,"fieldReferenceName":"System.IterationId"},{"key":7,"dropdownValue":"Parent","option":[],"isPickList":false,"fieldReferenceName":"System.Parent"},{"key":8,"dropdownValue":"Priority","option":[],"isPickList":false,"fieldReferenceName":"Microsoft.VSTS.Common.Priority"},{"key":9,"dropdownValue":"Related Link Count","option":[],"isPickList":false,"fieldReferenceName":"System.RelatedLinkCount"},{"key":10,"dropdownValue":"Remote Link Count","option":[],"isPickList":false,"fieldReferenceName":"System.RemoteLinkCount"},{"key":11,"dropdownValue":"Rev","option":[],"isPickList":false,"fieldReferenceName":"System.Rev"},{"key":12,"dropdownValue":"Stack Rank","option":[],"isPickList":false,"fieldReferenceName":"Microsoft.VSTS.Common.StackRank"},{"key":13,"dropdownValue":"Watermark","option":[],"isPickList":false,"fieldReferenceName":"System.Watermark"}],"mapping":"","enable":false,"defaultOptionList":[],"isText":false,"isSelected":true,"isPickListComplete":false,"pickListArr":[],"isSavedType":"saved","fieldReferenceName":"System.CommentCount","devopsWorkItem":"Comment Count"},{"key":3,"sourceWorkItem":"Complexity","dropdown":[{"key":0,"dropdownValue":"Priority","option":[{"crmOption":["1 - Very Low","2 - Low","3 - Medium","4 - High","5 - Very High"],"devOpsOption":["1","2","3","4"]}],"isPickList":true,"fieldReferenceName":"Microsoft.VSTS.Common.Priority"},{"key":1,"dropdownValue":"Reason","option":[{"crmOption":["1 - Very Low","2 - Low","3 - Medium","4 - High","5 - Very High"],"devOpsOption":["Completed","Cut","Deferred","Obsolete","Moved to backlog","Started","Reactivated","Added to backlog"]}],"isPickList":true,"fieldReferenceName":"System.Reason"},{"key":2,"dropdownValue":"State","option":[{"crmOption":["1 - Very Low","2 - Low","3 - Medium","4 - High","5 - Very High"],"devOpsOption":["Doing","Done","To Do"]}],"isPickList":true,"fieldReferenceName":"System.State"}],"mapping":"","enable":true,"defaultOptionList":[],"isText":false,"isSelected":true,"isPickListComplete":false,"pickListArr":[],"isSavedType":"saved","fieldReferenceName":"System.Reason","devopsWorkItem":"Reason"},{"key":4,"sourceWorkItem":"Design Classification","dropdown":[{"key":0,"dropdownValue":"Priority","option":[{"crmOption":["ISV","Requirement","Configuration","Customisation","Reporting","Integration","OOTB","Data Migration","Workflow/Flow"],"devOpsOption":["1","2","3","4"]}],"isPickList":true,"fieldReferenceName":"Microsoft.VSTS.Common.Priority"},{"key":1,"dropdownValue":"Reason","option":[{"crmOption":["ISV","Requirement","Configuration","Customisation","Reporting","Integration","OOTB","Data Migration","Workflow/Flow"],"devOpsOption":["Completed","Cut","Deferred","Obsolete","Moved to backlog","Started","Reactivated","Added to backlog"]}],"isPickList":true,"fieldReferenceName":"System.Reason"},{"key":2,"dropdownValue":"State","option":[{"crmOption":["ISV","Requirement","Configuration","Customisation","Reporting","Integration","OOTB","Data Migration","Workflow/Flow"],"devOpsOption":["Doing","Done","To Do"]}],"isPickList":true,"fieldReferenceName":"System.State"}],"mapping":"","enable":true,"defaultOptionList":[],"isText":false,"isSelected":true,"isPickListComplete":false,"pickListArr":[],"isSavedType":"saved","fieldReferenceName":"Microsoft.VSTS.Common.Priority","devopsWorkItem":"Priority"},{"key":5,"sourceWorkItem":"GapFit","dropdown":[{"key":0,"dropdownValue":"Priority","option":[{"crmOption":["Gap","Fit","Partial","ISV"],"devOpsOption":["1","2","3","4"]}],"isPickList":true,"fieldReferenceName":"Microsoft.VSTS.Common.Priority"},{"key":1,"dropdownValue":"Reason","option":[{"crmOption":["Gap","Fit","Partial","ISV"],"devOpsOption":["Completed","Cut","Deferred","Obsolete","Moved to backlog","Started","Reactivated","Added to backlog"]}],"isPickList":true,"fieldReferenceName":"System.Reason"},{"key":2,"dropdownValue":"State","option":[{"crmOption":["Gap","Fit","Partial","ISV"],"devOpsOption":["Doing","Done","To Do"]}],"isPickList":true,"fieldReferenceName":"System.State"}],"mapping":"","enable":true,"defaultOptionList":[],"isText":false,"isSelected":true,"isPickListComplete":false,"pickListArr":[],"isSavedType":"saved","fieldReferenceName":"System.State","devopsWorkItem":"State"},{"key":6,"sourceWorkItem":"ISV","dropdown":[{"key":0,"dropdownValue":"Activated By","option":[],"isPickList":false,"fieldReferenceName":"Microsoft.VSTS.Common.ActivatedBy"},{"key":1,"dropdownValue":"Area Path","option":[],"isPickList":false,"fieldReferenceName":"System.AreaPath"},{"key":2,"dropdownValue":"Assigned To","option":[],"isPickList":false,"fieldReferenceName":"System.AssignedTo"},{"key":3,"dropdownValue":"Authorized As","option":[],"isPickList":false,"fieldReferenceName":"System.AuthorizedAs"},{"key":4,"dropdownValue":"Board Column","option":[],"isPickList":false,"fieldReferenceName":"System.BoardColumn"},{"key":5,"dropdownValue":"Board Lane","option":[],"isPickList":false,"fieldReferenceName":"System.BoardLane"},{"key":6,"dropdownValue":"Changed By","option":[],"isPickList":false,"fieldReferenceName":"System.ChangedBy"},{"key":7,"dropdownValue":"Closed By","option":[],"isPickList":false,"fieldReferenceName":"Microsoft.VSTS.Common.ClosedBy"},{"key":8,"dropdownValue":"Created By","option":[],"isPickList":false,"fieldReferenceName":"System.CreatedBy"},{"key":9,"dropdownValue":"Iteration Path","option":[],"isPickList":false,"fieldReferenceName":"System.IterationPath"},{"key":10,"dropdownValue":"Node Name","option":[],"isPickList":false,"fieldReferenceName":"System.NodeName"},{"key":11,"dropdownValue":"Reason","option":[],"isPickList":false,"fieldReferenceName":"System.Reason"},{"key":12,"dropdownValue":"Resolved By","option":[],"isPickList":false,"fieldReferenceName":"Microsoft.VSTS.Common.ResolvedBy"},{"key":13,"dropdownValue":"State","option":[],"isPickList":false,"fieldReferenceName":"System.State"},{"key":14,"dropdownValue":"Tags","option":[],"isPickList":false,"fieldReferenceName":"System.Tags"},{"key":15,"dropdownValue":"Team Project","option":[],"isPickList":false,"fieldReferenceName":"System.TeamProject"}],"mapping":"","enable":false,"defaultOptionList":[],"isText":false,"isSelected":true,"isPickListComplete":false,"pickListArr":[],"isSavedType":"saved","fieldReferenceName":"","devopsWorkItem":"N/A"},{"key":7,"sourceWorkItem":"Module","dropdown":[{"key":0,"dropdownValue":"Activated By","option":[],"isPickList":false,"fieldReferenceName":"Microsoft.VSTS.Common.ActivatedBy"},{"key":1,"dropdownValue":"Area Path","option":[],"isPickList":false,"fieldReferenceName":"System.AreaPath"},{"key":2,"dropdownValue":"Assigned To","option":[],"isPickList":false,"fieldReferenceName":"System.AssignedTo"},{"key":3,"dropdownValue":"Authorized As","option":[],"isPickList":false,"fieldReferenceName":"System.AuthorizedAs"},{"key":4,"dropdownValue":"Board Column","option":[],"isPickList":false,"fieldReferenceName":"System.BoardColumn"},{"key":5,"dropdownValue":"Board Lane","option":[],"isPickList":false,"fieldReferenceName":"System.BoardLane"},{"key":6,"dropdownValue":"Changed By","option":[],"isPickList":false,"fieldReferenceName":"System.ChangedBy"},{"key":7,"dropdownValue":"Closed By","option":[],"isPickList":false,"fieldReferenceName":"Microsoft.VSTS.Common.ClosedBy"},{"key":8,"dropdownValue":"Created By","option":[],"isPickList":false,"fieldReferenceName":"System.CreatedBy"},{"key":9,"dropdownValue":"Iteration Path","option":[],"isPickList":false,"fieldReferenceName":"System.IterationPath"},{"key":10,"dropdownValue":"Node Name","option":[],"isPickList":false,"fieldReferenceName":"System.NodeName"},{"key":11,"dropdownValue":"Reason","option":[],"isPickList":false,"fieldReferenceName":"System.Reason"},{"key":12,"dropdownValue":"Resolved By","option":[],"isPickList":false,"fieldReferenceName":"Microsoft.VSTS.Common.ResolvedBy"},{"key":13,"dropdownValue":"State","option":[],"isPickList":false,"fieldReferenceName":"System.State"},{"key":14,"dropdownValue":"Tags","option":[],"isPickList":false,"fieldReferenceName":"System.Tags"},{"key":15,"dropdownValue":"Team Project","option":[],"isPickList":false,"fieldReferenceName":"System.TeamProject"}],"mapping":"","enable":false,"defaultOptionList":[],"isText":false,"isSelected":true,"isPickListComplete":false,"pickListArr":[],"isSavedType":"saved","fieldReferenceName":"","devopsWorkItem":"N/A"},{"key":8,"sourceWorkItem":"Priority","dropdown":[{"key":0,"dropdownValue":"Priority","option":[{"crmOption":["1","2","3","4"],"devOpsOption":["1","2","3","4"]}],"isPickList":true,"fieldReferenceName":"Microsoft.VSTS.Common.Priority"},{"key":1,"dropdownValue":"Reason","option":[{"crmOption":["1","2","3","4"],"devOpsOption":["Completed","Cut","Deferred","Obsolete","Moved to backlog","Started","Reactivated","Added to backlog"]}],"isPickList":true,"fieldReferenceName":"System.Reason"},{"key":2,"dropdownValue":"State","option":[{"crmOption":["1","2","3","4"],"devOpsOption":["Doing","Done","To Do"]}],"isPickList":true,"fieldReferenceName":"System.State"}],"mapping":"","enable":false,"defaultOptionList":[],"isText":false,"isSelected":true,"isPickListComplete":false,"pickListArr":[],"isSavedType":"saved","fieldReferenceName":"Microsoft.VSTS.Common.Priority","devopsWorkItem":"N/A"},{"key":9,"sourceWorkItem":"Resource","dropdown":[{"key":0,"dropdownValue":"Activated By","option":[],"isPickList":false,"fieldReferenceName":"Microsoft.VSTS.Common.ActivatedBy"},{"key":1,"dropdownValue":"Area Path","option":[],"isPickList":false,"fieldReferenceName":"System.AreaPath"},{"key":2,"dropdownValue":"Assigned To","option":[],"isPickList":false,"fieldReferenceName":"System.AssignedTo"},{"key":3,"dropdownValue":"Authorized As","option":[],"isPickList":false,"fieldReferenceName":"System.AuthorizedAs"},{"key":4,"dropdownValue":"Board Column","option":[],"isPickList":false,"fieldReferenceName":"System.BoardColumn"},{"key":5,"dropdownValue":"Board Lane","option":[],"isPickList":false,"fieldReferenceName":"System.BoardLane"},{"key":6,"dropdownValue":"Changed By","option":[],"isPickList":false,"fieldReferenceName":"System.ChangedBy"},{"key":7,"dropdownValue":"Closed By","option":[],"isPickList":false,"fieldReferenceName":"Microsoft.VSTS.Common.ClosedBy"},{"key":8,"dropdownValue":"Created By","option":[],"isPickList":false,"fieldReferenceName":"System.CreatedBy"},{"key":9,"dropdownValue":"Iteration Path","option":[],"isPickList":false,"fieldReferenceName":"System.IterationPath"},{"key":10,"dropdownValue":"Node Name","option":[],"isPickList":false,"fieldReferenceName":"System.NodeName"},{"key":11,"dropdownValue":"Reason","option":[],"isPickList":false,"fieldReferenceName":"System.Reason"},{"key":12,"dropdownValue":"Resolved By","option":[],"isPickList":false,"fieldReferenceName":"Microsoft.VSTS.Common.ResolvedBy"},{"key":13,"dropdownValue":"State","option":[],"isPickList":false,"fieldReferenceName":"System.State"},{"key":14,"dropdownValue":"Tags","option":[],"isPickList":false,"fieldReferenceName":"System.Tags"},{"key":15,"dropdownValue":"Team Project","option":[],"isPickList":false,"fieldReferenceName":"System.TeamProject"}],"mapping":"","enable":false,"defaultOptionList":[],"isText":false,"isSelected":true,"isPickListComplete":false,"pickListArr":[],"isSavedType":"saved","fieldReferenceName":"","devopsWorkItem":"N/A"},{"key":10,"sourceWorkItem":"Acceptance Criteria","dropdown":[{"key":0,"dropdownValue":"Activated By","option":[],"isPickList":false,"fieldReferenceName":"Microsoft.VSTS.Common.ActivatedBy"},{"key":1,"dropdownValue":"Area Path","option":[],"isPickList":false,"fieldReferenceName":"System.AreaPath"},{"key":2,"dropdownValue":"Assigned To","option":[],"isPickList":false,"fieldReferenceName":"System.AssignedTo"},{"key":3,"dropdownValue":"Authorized As","option":[],"isPickList":false,"fieldReferenceName":"System.AuthorizedAs"},{"key":4,"dropdownValue":"Board Column","option":[],"isPickList":false,"fieldReferenceName":"System.BoardColumn"},{"key":5,"dropdownValue":"Board Lane","option":[],"isPickList":false,"fieldReferenceName":"System.BoardLane"},{"key":6,"dropdownValue":"Changed By","option":[],"isPickList":false,"fieldReferenceName":"System.ChangedBy"},{"key":7,"dropdownValue":"Closed By","option":[],"isPickList":false,"fieldReferenceName":"Microsoft.VSTS.Common.ClosedBy"},{"key":8,"dropdownValue":"Created By","option":[],"isPickList":false,"fieldReferenceName":"System.CreatedBy"},{"key":9,"dropdownValue":"Description","option":[],"isPickList":false,"fieldReferenceName":"System.Description"},{"key":10,"dropdownValue":"History","option":[],"isPickList":false,"fieldReferenceName":"System.History"},{"key":11,"dropdownValue":"Iteration Path","option":[],"isPickList":false,"fieldReferenceName":"System.IterationPath"},{"key":12,"dropdownValue":"Node Name","option":[],"isPickList":false,"fieldReferenceName":"System.NodeName"},{"key":13,"dropdownValue":"Reason","option":[],"isPickList":false,"fieldReferenceName":"System.Reason"},{"key":14,"dropdownValue":"Resolved By","option":[],"isPickList":false,"fieldReferenceName":"Microsoft.VSTS.Common.ResolvedBy"},{"key":15,"dropdownValue":"State","option":[],"isPickList":false,"fieldReferenceName":"System.State"},{"key":16,"dropdownValue":"Tags","option":[],"isPickList":false,"fieldReferenceName":"System.Tags"},{"key":17,"dropdownValue":"Team Project","option":[],"isPickList":false,"fieldReferenceName":"System.TeamProject"}],"mapping":"","enable":false,"defaultOptionList":[],"isText":false,"isSelected":true,"isPickListComplete":false,"pickListArr":[],"isSavedType":"saved","fieldReferenceName":"","devopsWorkItem":"N/A"}]}]
+
+console.log("JSONPARSE",_AEEEE);
+
 // const treeData: DataNode[] = [
 //   {
 //     title: 'parent 1',
@@ -69,361 +74,346 @@ const internalIds:any = [
   }
 ]
 
-const workItems:any = {"results":  [
-    
-  {
-      "title": "RDW1",
-      "sequance": "1",
-      "sequanceid": "d605a3ed-3b2c-ee11-bdf4-6045bd0fcbc6",
-      "parentworkitem": "",
-      "description": "RDW1",
-      "workitemid": "d705a3ed-3b2c-ee11-bdf4-6045bd0fcbc6",
-      "priority": "1",
-      "workitemresource": "674ae973-c4dc-ed11-a7c6-6045bdd0ef22",
-      "designclassification": "Configuration",
-      "workitemmodule": "",
-      "gapfit": "Partial",
-      "workitemisv": "5137cc2a-c4dc-ed11-a7c6-6045bdd0ef22",
-      "complexity": "2 - Low",
-      "buildestimatepts": "2.0000000000",
-      "buildestimatehrs": "3.0000000000",
-      "workitemtype": "Epic",
-      "workitemtypeid": "157c2482-c4dc-ed11-a7c6-6045bdd0ef22",
-      "acceptancecriteria": "AC1",
-      "internalid": "DV-439"
-  },
-
-  {
-      "title": "RDW2",
-      "sequance": "1",
-      "sequanceid": "35c5870e-3c2c-ee11-bdf4-6045bd0fcbc6",
-      "parentworkitem": "d605a3ed-3b2c-ee11-bdf4-6045bd0fcbc6",
-      "description": "",
-      "workitemid": "36c5870e-3c2c-ee11-bdf4-6045bd0fcbc6",
-      "priority": "",
-      "workitemresource": "",
-      "designclassification": "",
-      "workitemmodule": "",
-      "gapfit": "",
-      "workitemisv": "",
-      "complexity": "",
-      "buildestimatepts": "",
-      "buildestimatehrs": "",
-      "workitemtype": "Feature",
-      "workitemtypeid": "187c2482-c4dc-ed11-a7c6-6045bdd0ef22",
-      "acceptancecriteria": "",
-      "internalid": "DV-439"
-  },
-
-  {
-      "title": "RDW3",
-      "sequance": "1",
-      "sequanceid": "d43bc8b5-062d-ee11-bdf4-6045bd0fcbc6",
-      "parentworkitem": "35c5870e-3c2c-ee11-bdf4-6045bd0fcbc6",
-      "description": "",
-      "workitemid": "d53bc8b5-062d-ee11-bdf4-6045bd0fcbc6",
-      "priority": "",
-      "workitemresource": "",
-      "designclassification": "",
-      "workitemmodule": "",
-      "gapfit": "",
-      "workitemisv": "",
-      "complexity": "",
-      "buildestimatepts": "",
-      "buildestimatehrs": "",
-      "workitemtype": "User Story",
-      "workitemtypeid": "68f77c92-c4dc-ed11-a7c6-6045bdd0ef22",
-      "acceptancecriteria": "",
-      "internalid": "DV-439"
-  },
-
-  {
-      "title": "RDW4",
-      "sequance": "1",
-      "sequanceid": "4fdd7fc9-062d-ee11-bdf4-6045bd0fcbc6",
-      "parentworkitem": "d43bc8b5-062d-ee11-bdf4-6045bd0fcbc6",
-      "description": "",
-      "workitemid": "50dd7fc9-062d-ee11-bdf4-6045bd0fcbc6",
-      "priority": "",
-      "workitemresource": "",
-      "designclassification": "",
-      "workitemmodule": "",
-      "gapfit": "",
-      "workitemisv": "",
-      "complexity": "",
-      "buildestimatepts": "",
-      "buildestimatehrs": "",
-      "workitemtype": "Task",
-      "workitemtypeid": "5c7a6e8a-c4dc-ed11-a7c6-6045bdd0ef22",
-      "acceptancecriteria": "",
-      "internalid": "DV-439"
-  },
-
-  {
-      "title": "RDW5",
-      "sequance": "2",
-      "sequanceid": "9f956bd6-062d-ee11-bdf4-6045bd0fcbc6",
-      "parentworkitem": "d43bc8b5-062d-ee11-bdf4-6045bd0fcbc6",
-      "description": "",
-      "workitemid": "a0956bd6-062d-ee11-bdf4-6045bd0fcbc6",
-      "priority": "",
-      "workitemresource": "",
-      "designclassification": "",
-      "workitemmodule": "",
-      "gapfit": "",
-      "workitemisv": "",
-      "complexity": "",
-      "buildestimatepts": "",
-      "buildestimatehrs": "",
-      "workitemtype": "Requirement",
-      "workitemtypeid": "5b7a6e8a-c4dc-ed11-a7c6-6045bdd0ef22",
-      "acceptancecriteria": "",
-      "internalid": "DV-439"
-  },
-
-  {
-      "title": "RDW6",
-      "sequance": "2",
-      "sequanceid": "e43374ea-062d-ee11-bdf4-6045bd0fcbc6",
-      "parentworkitem": "",
-      "description": "",
-      "workitemid": "e53374ea-062d-ee11-bdf4-6045bd0fcbc6",
-      "priority": "",
-      "workitemresource": "",
-      "designclassification": "",
-      "workitemmodule": "",
-      "gapfit": "",
-      "workitemisv": "",
-      "complexity": "",
-      "buildestimatepts": "",
-      "buildestimatehrs": "",
-      "workitemtype": "Epic",
-      "workitemtypeid": "157c2482-c4dc-ed11-a7c6-6045bdd0ef22",
-      "acceptancecriteria": "",
-      "internalid": "DV-439"
-  },
-
-  {
-      "title": "RDW7",
-      "sequance": "1",
-      "sequanceid": "4b8935fe-062d-ee11-bdf4-6045bd0fcbc6",
-      "parentworkitem": "e43374ea-062d-ee11-bdf4-6045bd0fcbc6",
-      "description": "",
-      "workitemid": "4c8935fe-062d-ee11-bdf4-6045bd0fcbc6",
-      "priority": "",
-      "workitemresource": "",
-      "designclassification": "",
-      "workitemmodule": "",
-      "gapfit": "",
-      "workitemisv": "",
-      "complexity": "",
-      "buildestimatepts": "",
-      "buildestimatehrs": "",
-      "workitemtype": "Feature",
-      "workitemtypeid": "187c2482-c4dc-ed11-a7c6-6045bdd0ef22",
-      "acceptancecriteria": "",
-      "internalid": "DV-439"
-  },
-
-  {
-      "title": "RDW8",
-      "sequance": "3",
-      "sequanceid": "39ad9c4d-072d-ee11-bdf4-6045bd0fcbc6",
-      "parentworkitem": "",
-      "description": "",
-      "workitemid": "3aad9c4d-072d-ee11-bdf4-6045bd0fcbc6",
-      "priority": "",
-      "workitemresource": "",
-      "designclassification": "",
-      "workitemmodule": "",
-      "gapfit": "",
-      "workitemisv": "",
-      "complexity": "",
-      "buildestimatepts": "",
-      "buildestimatehrs": "",
-      "workitemtype": "Epic",
-      "workitemtypeid": "157c2482-c4dc-ed11-a7c6-6045bdd0ef22",
-      "acceptancecriteria": "",
-      "internalid": "DV-439"
-  },
-
-  {
-      "title": "RDS_WI1",
-      "sequance": "4",
-      "sequanceid": "53e65bb3-072d-ee11-bdf4-6045bd0fcbc6",
-      "parentworkitem": "",
-      "description": "",
-      "workitemid": "54e65bb3-072d-ee11-bdf4-6045bd0fcbc6",
-      "priority": "",
-      "workitemresource": "",
-      "designclassification": "",
-      "workitemmodule": "",
-      "gapfit": "",
-      "workitemisv": "",
-      "complexity": "",
-      "buildestimatepts": "",
-      "buildestimatehrs": "",
-      "workitemtype": "Epic",
-      "workitemtypeid": "157c2482-c4dc-ed11-a7c6-6045bdd0ef22",
-      "acceptancecriteria": "",
-      "internalid": "DV-439_DV-440"
-  },
-
-  {
-      "title": "RDS_WI2",
-      "sequance": "1",
-      "sequanceid": "0e3fd7bc-072d-ee11-bdf4-6045bd0fcbc6",
-      "parentworkitem": "53e65bb3-072d-ee11-bdf4-6045bd0fcbc6",
-      "description": "",
-      "workitemid": "0f3fd7bc-072d-ee11-bdf4-6045bd0fcbc6",
-      "priority": "",
-      "workitemresource": "",
-      "designclassification": "",
-      "workitemmodule": "",
-      "gapfit": "",
-      "workitemisv": "",
-      "complexity": "",
-      "buildestimatepts": "",
-      "buildestimatehrs": "",
-      "workitemtype": "Feature",
-      "workitemtypeid": "187c2482-c4dc-ed11-a7c6-6045bdd0ef22",
-      "acceptancecriteria": "",
-      "internalid": "DV-439_DV-440"
-  },
-
-  {
-      "title": "RDS_WI3",
-      "sequance": "1",
-      "sequanceid": "8cae39d2-072d-ee11-bdf4-6045bd0fcbc6",
-      "parentworkitem": "0e3fd7bc-072d-ee11-bdf4-6045bd0fcbc6",
-      "description": "",
-      "workitemid": "8dae39d2-072d-ee11-bdf4-6045bd0fcbc6",
-      "priority": "",
-      "workitemresource": "",
-      "designclassification": "",
-      "workitemmodule": "",
-      "gapfit": "",
-      "workitemisv": "",
-      "complexity": "",
-      "buildestimatepts": "",
-      "buildestimatehrs": "",
-      "workitemtype": "User Story",
-      "workitemtypeid": "68f77c92-c4dc-ed11-a7c6-6045bdd0ef22",
-      "acceptancecriteria": "",
-      "internalid": "DV-439_DV-440"
-  },
-
-  {
-      "title": "RDS_WI4",
-      "sequance": "1",
-      "sequanceid": "23b129e2-072d-ee11-bdf4-6045bd0fcbc6",
-      "parentworkitem": "8cae39d2-072d-ee11-bdf4-6045bd0fcbc6",
-      "description": "",
-      "workitemid": "24b129e2-072d-ee11-bdf4-6045bd0fcbc6",
-      "priority": "",
-      "workitemresource": "",
-      "designclassification": "",
-      "workitemmodule": "",
-      "gapfit": "",
-      "workitemisv": "",
-      "complexity": "",
-      "buildestimatepts": "",
-      "buildestimatehrs": "",
-      "workitemtype": "Task",
-      "workitemtypeid": "5c7a6e8a-c4dc-ed11-a7c6-6045bdd0ef22",
-      "acceptancecriteria": "",
-      "internalid": "DV-439_DV-440"
-  },
-
-  {
-      "title": "RDS_WI5",
-      "sequance": "2",
-      "sequanceid": "dcb8e001-082d-ee11-bdf4-6045bd0fcbc6",
-      "parentworkitem": "35c5870e-3c2c-ee11-bdf4-6045bd0fcbc6",
-      "description": "",
-      "workitemid": "ddb8e001-082d-ee11-bdf4-6045bd0fcbc6",
-      "priority": "",
-      "workitemresource": "",
-      "designclassification": "",
-      "workitemmodule": "",
-      "gapfit": "",
-      "workitemisv": "",
-      "complexity": "",
-      "buildestimatepts": "",
-      "buildestimatehrs": "",
-      "workitemtype": "User Story",
-      "workitemtypeid": "68f77c92-c4dc-ed11-a7c6-6045bdd0ef22",
-      "acceptancecriteria": "",
-      "internalid": "DV-439_DV-440"
-  },
-
-  {
-      "title": "RDQ_WI1",
-      "sequance": "5",
-      "sequanceid": "13fdb962-082d-ee11-bdf4-6045bd0fcbc6",
-      "parentworkitem": "",
-      "description": "",
-      "workitemid": "14fdb962-082d-ee11-bdf4-6045bd0fcbc6",
-      "priority": "",
-      "workitemresource": "",
-      "designclassification": "",
-      "workitemmodule": "",
-      "gapfit": "",
-      "workitemisv": "",
-      "complexity": "",
-      "buildestimatepts": "",
-      "buildestimatehrs": "",
-      "workitemtype": "Epic",
-      "workitemtypeid": "157c2482-c4dc-ed11-a7c6-6045bdd0ef22",
-      "acceptancecriteria": "",
-      "internalid": "DV-439_DV-440_DV-441"
-  },
-
-  {
-      "title": "RDQ_WI2",
-      "sequance": "1",
-      "sequanceid": "39821b71-082d-ee11-bdf4-6045bd0fcbc6",
-      "parentworkitem": "13fdb962-082d-ee11-bdf4-6045bd0fcbc6",
-      "description": "",
-      "workitemid": "3a821b71-082d-ee11-bdf4-6045bd0fcbc6",
-      "priority": "",
-      "workitemresource": "",
-      "designclassification": "",
-      "workitemmodule": "",
-      "gapfit": "",
-      "workitemisv": "",
-      "complexity": "",
-      "buildestimatepts": "",
-      "buildestimatehrs": "",
-      "workitemtype": "Feature",
-      "workitemtypeid": "187c2482-c4dc-ed11-a7c6-6045bdd0ef22",
-      "acceptancecriteria": "",
-      "internalid": "DV-439_DV-440_DV-441"
-  },
-
-  {
-      "title": "RDQ_WI3",
-      "sequance": "1",
-      "sequanceid": "0fe7b87c-082d-ee11-bdf4-6045bd0fcbc6",
-      "parentworkitem": "39821b71-082d-ee11-bdf4-6045bd0fcbc6",
-      "description": "",
-      "workitemid": "10e7b87c-082d-ee11-bdf4-6045bd0fcbc6",
-      "priority": "",
-      "workitemresource": "",
-      "designclassification": "",
-      "workitemmodule": "",
-      "gapfit": "",
-      "workitemisv": "",
-      "complexity": "",
-      "buildestimatepts": "",
-      "buildestimatehrs": "",
-      "workitemtype": "User Story",
-      "workitemtypeid": "68f77c92-c4dc-ed11-a7c6-6045bdd0ef22",
-      "acceptancecriteria": "",
-      "internalid": "DV-439_DV-440_DV-441"
-  }
-
-]}
+const workItems:any =  {
+  results: [
+    {
+      "Title": "RDW1",
+      sequance: "1",
+      sequanceid: "d605a3ed-3b2c-ee11-bdf4-6045bd0fcbc6",
+      "Parent Work Item": "",
+      Description: "RDW1",
+      workitemid: "d705a3ed-3b2c-ee11-bdf4-6045bd0fcbc6",
+      Priority: "🟥 1",
+      Resource: "",
+      "Design Classification": "Configuration",
+      Module: "Test Module",
+      GapFit: "Partial",
+      ISV: "Insight Works",
+      Complexity: "2 - Low",
+      "Build estimate (pts)": "2.0000000000",
+      "Build estimate (hrs)": "3.0000000000",
+      "Work item type": "Epic",
+      workitemtypeid: "157c2482-c4dc-ed11-a7c6-6045bdd0ef22",
+      "Acceptance Criteria": "AC1",
+      internalid: "DV-439",
+    },
+    {
+      "Title": "RDW2",
+      workitemid: "36c5870e-3c2c-ee11-bdf4-6045bd0fcbc6",
+      sequance: "1",
+      sequanceid: "35c5870e-3c2c-ee11-bdf4-6045bd0fcbc6",
+      "Parent Work Item": "d605a3ed-3b2c-ee11-bdf4-6045bd0fcbc6",
+      Description: "",
+      Priority: "",
+      Resource: "",
+      "Design Classification": "",
+      Module: "",
+      GapFit: "",
+      ISV: "",
+      Complexity: "",
+      "Build estimate (pts)": "",
+      "Build estimate (hrs)": "",
+      "Work item type": "Feature",
+      workitemtypeid: "187c2482-c4dc-ed11-a7c6-6045bdd0ef22",
+      "Acceptance Criteria": "",
+      internalid: "DV-439",
+    },
+    {
+      "Title": "RDW3",
+      workitemid: "d53bc8b5-062d-ee11-bdf4-6045bd0fcbc6",
+      sequance: "1",
+      sequanceid: "d43bc8b5-062d-ee11-bdf4-6045bd0fcbc6",
+      "Parent Work Item": "35c5870e-3c2c-ee11-bdf4-6045bd0fcbc6",
+      Description: "",
+      Priority: "🟥 1",
+      Resource: "",
+      "Design Classification": "Customisation",
+      Module: "Opportunity Management",
+      GapFit: "Gap",
+      ISV: "MsCrmAddOns DocumentsCorePack",
+      Complexity: "2 - Low",
+      "Build estimate (pts)": "5.0000000000",
+      "Build estimate (hrs)": "3.0000000000",
+      "Work item type": "User Story",
+      workitemtypeid: "68f77c92-c4dc-ed11-a7c6-6045bdd0ef22",
+      "Acceptance Criteria": "",
+      internalid: "DV-439",
+    },
+    {
+      "Title": "RDW4",
+      workitemid: "50dd7fc9-062d-ee11-bdf4-6045bd0fcbc6",
+      sequance: "1",
+      sequanceid: "4fdd7fc9-062d-ee11-bdf4-6045bd0fcbc6",
+      "Parent Work Item": "d43bc8b5-062d-ee11-bdf4-6045bd0fcbc6",
+      Description: "",
+      Priority: "",
+      Resource: "",
+      "Design Classification": "",
+      Module: "",
+      GapFit: "",
+      ISV: "",
+      Complexity: "",
+      "Build estimate (pts)": "",
+      "Build estimate (hrs)": "",
+      "Work item type": "Task",
+      workitemtypeid: "5c7a6e8a-c4dc-ed11-a7c6-6045bdd0ef22",
+      "Acceptance Criteria": "",
+      internalid: "DV-439",
+    },
+    {
+      "Title": "RDW5",
+      workitemid: "a0956bd6-062d-ee11-bdf4-6045bd0fcbc6",
+      sequance: "2",
+      sequanceid: "9f956bd6-062d-ee11-bdf4-6045bd0fcbc6",
+      "Parent Work Item": "d43bc8b5-062d-ee11-bdf4-6045bd0fcbc6",
+      Description: "",
+      Priority: "",
+      Resource: "",
+      "Design Classification": "",
+      Module: "",
+      GapFit: "",
+      ISV: "",
+      Complexity: "",
+      "Build estimate (pts)": "",
+      "Build estimate (hrs)": "",
+      "Work item type": "Requirement",
+      workitemtypeid: "5b7a6e8a-c4dc-ed11-a7c6-6045bdd0ef22",
+      "Acceptance Criteria": "",
+      internalid: "DV-439",
+    },
+    {
+      "Title": "RDW6",
+      workitemid: "e53374ea-062d-ee11-bdf4-6045bd0fcbc6",
+      sequance: "2",
+      sequanceid: "e43374ea-062d-ee11-bdf4-6045bd0fcbc6",
+      "Parent Work Item": "",
+      Description: "new",
+      Priority: "1",
+      Resource: "",
+      "Design Classification": "",
+      Module: "",
+      GapFit: "",
+      ISV: "",
+      Complexity: "",
+      "Build estimate (pts)": "",
+      "Build estimate (hrs)": "",
+      "Work item type": "Epic",
+      workitemtypeid: "157c2482-c4dc-ed11-a7c6-6045bdd0ef22",
+      "Acceptance Criteria": "",
+      internalid: "DV-439",
+    },
+    {
+      "Title": "RDW7",
+      workitemid: "4c8935fe-062d-ee11-bdf4-6045bd0fcbc6",
+      sequance: "1",
+      sequanceid: "4b8935fe-062d-ee11-bdf4-6045bd0fcbc6",
+      "Parent Work Item": "e43374ea-062d-ee11-bdf4-6045bd0fcbc6",
+      Description: "",
+      Priority: "🟥 1",
+      Resource: "",
+      "Design Classification": "Customisation",
+      Module: "Test Module",
+      GapFit: "Gap",
+      ISV: "Insight Works",
+      Complexity: "2 - Low",
+      "Build estimate (pts)": "2.0000000000",
+      "Build estimate (hrs)": "2.0000000000",
+      "Work item type": "Feature",
+      workitemtypeid: "187c2482-c4dc-ed11-a7c6-6045bdd0ef22",
+      "Acceptance Criteria": "",
+      internalid: "DV-439",
+    },
+    {
+      "Title": "RDW8",
+      workitemid: "3aad9c4d-072d-ee11-bdf4-6045bd0fcbc6",
+      sequance: "3",
+      sequanceid: "39ad9c4d-072d-ee11-bdf4-6045bd0fcbc6",
+      "Parent Work Item": "",
+      Description: "",
+      Priority: "",
+      Resource: "",
+      "Design Classification": "",
+      Module: "",
+      GapFit: "",
+      ISV: "",
+      Complexity: "",
+      "Build estimate (pts)": "",
+      "Build estimate (hrs)": "",
+      "Work item type": "Epic",
+      workitemtypeid: "157c2482-c4dc-ed11-a7c6-6045bdd0ef22",
+      "Acceptance Criteria": "",
+      internalid: "DV-439",
+    },
+    {
+      "Title": "RDS_WI1",
+      workitemid: "54e65bb3-072d-ee11-bdf4-6045bd0fcbc6",
+      sequance: "4",
+      sequanceid: "53e65bb3-072d-ee11-bdf4-6045bd0fcbc6",
+      "Parent Work Item": "",
+      Description: "",
+      Priority: "",
+      Resource: "",
+      "Design Classification": "",
+      Module: "",
+      GapFit: "",
+      ISV: "",
+      Complexity: "",
+      "Build estimate (pts)": "",
+      "Build estimate (hrs)": "",
+      "Work item type": "Epic",
+      workitemtypeid: "157c2482-c4dc-ed11-a7c6-6045bdd0ef22",
+      "Acceptance Criteria": "",
+      internalid: "DV-439_DV-440",
+    },
+    {
+      "Title": "RDS_WI2",
+      workitemid: "0f3fd7bc-072d-ee11-bdf4-6045bd0fcbc6",
+      sequance: "1",
+      sequanceid: "0e3fd7bc-072d-ee11-bdf4-6045bd0fcbc6",
+      "Parent Work Item": "53e65bb3-072d-ee11-bdf4-6045bd0fcbc6",
+      Description: "",
+      Priority: "",
+      Resource: "",
+      "Design Classification": "",
+      Module: "",
+      GapFit: "",
+      ISV: "",
+      Complexity: "",
+      "Build estimate (pts)": "",
+      "Build estimate (hrs)": "",
+      "Work item type": "Feature",
+      workitemtypeid: "187c2482-c4dc-ed11-a7c6-6045bdd0ef22",
+      "Acceptance Criteria": "",
+      internalid: "DV-439_DV-440",
+    },
+    {
+      "Title": "RDS_WI3",
+      workitemid: "8dae39d2-072d-ee11-bdf4-6045bd0fcbc6",
+      sequance: "1",
+      sequanceid: "8cae39d2-072d-ee11-bdf4-6045bd0fcbc6",
+      "Parent Work Item": "0e3fd7bc-072d-ee11-bdf4-6045bd0fcbc6",
+      Description: "",
+      Priority: "",
+      Resource: "",
+      "Design Classification": "",
+      Module: "",
+      GapFit: "",
+      ISV: "",
+      Complexity: "",
+      "Build estimate (pts)": "",
+      "Build estimate (hrs)": "",
+      "Work item type": "User Story",
+      workitemtypeid: "68f77c92-c4dc-ed11-a7c6-6045bdd0ef22",
+      "Acceptance Criteria": "",
+      internalid: "DV-439_DV-440",
+    },
+    {
+      "Title": "RDS_WI4",
+      workitemid: "24b129e2-072d-ee11-bdf4-6045bd0fcbc6",
+      sequance: "1",
+      sequanceid: "23b129e2-072d-ee11-bdf4-6045bd0fcbc6",
+      "Parent Work Item": "8cae39d2-072d-ee11-bdf4-6045bd0fcbc6",
+      Description: "",
+      Priority: "",
+      Resource: "",
+      "Design Classification": "",
+      Module: "",
+      GapFit: "",
+      ISV: "",
+      Complexity: "",
+      "Build estimate (pts)": "",
+      "Build estimate (hrs)": "",
+      "Work item type": "Task",
+      workitemtypeid: "5c7a6e8a-c4dc-ed11-a7c6-6045bdd0ef22",
+      "Acceptance Criteria": "",
+      internalid: "DV-439_DV-440",
+    },
+    {
+      "Title": "RDS_WI5",
+      workitemid: "ddb8e001-082d-ee11-bdf4-6045bd0fcbc6",
+      sequance: "2",
+      sequanceid: "dcb8e001-082d-ee11-bdf4-6045bd0fcbc6",
+      "Parent Work Item": "35c5870e-3c2c-ee11-bdf4-6045bd0fcbc6",
+      Description: "",
+      Priority: "",
+      Resource: "",
+      "Design Classification": "",
+      Module: "",
+      GapFit: "",
+      ISV: "",
+      Complexity: "",
+      "Build estimate (pts)": "",
+      "Build estimate (hrs)": "",
+      "Work item type": "User Story",
+      workitemtypeid: "68f77c92-c4dc-ed11-a7c6-6045bdd0ef22",
+      "Acceptance Criteria": "",
+      internalid: "DV-439_DV-440",
+    },
+    {
+      "Title": "RDQ_WI1",
+      workitemid: "14fdb962-082d-ee11-bdf4-6045bd0fcbc6",
+      sequance: "5",
+      sequanceid: "13fdb962-082d-ee11-bdf4-6045bd0fcbc6",
+      "Parent Work Item": "",
+      Description: "",
+      Priority: "",
+      Resource: "",
+      "Design Classification": "",
+      Module: "",
+      GapFit: "",
+      ISV: "",
+      Complexity: "",
+      "Build estimate (pts)": "",
+      "Build estimate (hrs)": "",
+      "Work item type": "Epic",
+      workitemtypeid: "157c2482-c4dc-ed11-a7c6-6045bdd0ef22",
+      "Acceptance Criteria": "",
+      internalid: "DV-439_DV-440_DV-441",
+    },
+    {
+      "Title": "RDQ_WI2",
+      workitemid: "3a821b71-082d-ee11-bdf4-6045bd0fcbc6",
+      sequance: "1",
+      sequanceid: "39821b71-082d-ee11-bdf4-6045bd0fcbc6",
+      "Parent Work Item": "13fdb962-082d-ee11-bdf4-6045bd0fcbc6",
+      Description: "",
+      Priority: "",
+      Resource: "",
+      "Design Classification": "",
+      Module: "",
+      GapFit: "",
+      ISV: "",
+      Complexity: "",
+      "Build estimate (pts)": "",
+      "Build estimate (hrs)": "",
+      "Work item type": "Feature",
+      workitemtypeid: "187c2482-c4dc-ed11-a7c6-6045bdd0ef22",
+      "Acceptance Criteria": "",
+      internalid: "DV-439_DV-440_DV-441",
+    },
+    {
+      "Title": "RDQ_WI3",
+      workitemid: "10e7b87c-082d-ee11-bdf4-6045bd0fcbc6",
+      sequance: "1",
+      sequanceid: "0fe7b87c-082d-ee11-bdf4-6045bd0fcbc6",
+      "Parent Work Item": "39821b71-082d-ee11-bdf4-6045bd0fcbc6",
+      Description: "",
+      Priority: "",
+      Resource: "",
+      "Design Classification": "",
+      Module: "",
+      GapFit: "",
+      ISV: "",
+      Complexity: "",
+      "Build estimate (pts)": "",
+      "Build estimate (hrs)": "",
+      "Work item type": "User Story",
+      workitemtypeid: "68f77c92-c4dc-ed11-a7c6-6045bdd0ef22",
+      "Acceptance Criteria": "",
+      internalid: "DV-439_DV-440_DV-441",
+    },
+  ],
+};
 
 
 
@@ -485,31 +475,90 @@ const setAllKeysChecked = (loadedKeys:any, {event, node}:any ) => {
 
   const onCheck: TreeProps['onCheck'] = (checkedKeys, info) => {
     console.log('onCheck', checkedKeys, info?.checkedNodes,"info..",info);
+    
     setSelectedNodes(info?.checkedNodes);
     setHalfSelectedNodes(info?.halfCheckedKeys);
   };
 
   const handleMigrateToDevops = async() => {
     
-    const checkedObj = filteredTreeData?.filter((node:any)=> selectedNodes?.includes(node?.workitemid));
-    console.log("checked objects for migration:", checkedObj);
-    // create functionality....
-    // To filter the parent nodes....
-    const parentNodes = selectedNodes?.filter((item:any)=> !item?.rest?.parentworkitem);
-    console.log("parentNodes", parentNodes);
-    console.log("halfSelectedNodes", halfSelectedNodes);
-    // To get the half checked nodes with parent.....
-    // const filteredNodes = halfSelectedNodes;
-    console.log("selectedNodes..", selectedNodes);
-    const halfCheckedData = halfSelectedNodes?.map((item:any)=>findNodeAndRelations(treeData,item));
-    console.log("half checked data..", halfCheckedData);
+    // const checkedObj = filteredTreeData?.filter((node:any)=> selectedNodes?.includes(node?.workitemid));
+    // console.log("checked objects for migration:", checkedObj);
+    // // create functionality....
+    // // To filter the parent nodes....
+    // const parentNodes = selectedNodes?.filter((item:any)=> !item?.rest?.parentworkitem);
+    // console.log("parentNodes", parentNodes);
+    // console.log("halfSelectedNodes", halfSelectedNodes);
+    // // To get the half checked nodes with parent.....
+    // // const filteredNodes = halfSelectedNodes;
+    // console.log("selectedNodes..", selectedNodes);
+    // const halfCheckedData = halfSelectedNodes?.map((item:any)=>findNodeAndRelations(treeData,item));
+    // console.log("half checked data..", halfCheckedData);
 
-    const result = await parentNodes?.map((item:any)=>{
-       generateDevops(item, false);
-    }); 
+    console.log("XXXXX",selectedNodes);
+   // generateDevops(selectedNodes, false);
 
-    console.log("console....", result);
-    //  update functionality ..... 
+   const allNodes = selectedNodes.map((item:any)=>{
+   let fieldsWithReferncePAth =   _AEEEE?.map((_fields:any)=> {
+
+    let  matchFiledArr = _fields?.key && item?.rest["Work item type"] && _fields.value?.length && _fields.value.map((_item:any)=> {
+           let x  =Object.keys(item?.rest).filter((values)=> {
+            if(_item?.sourceWorkItem ===values){
+              return  _item?.sourceWorkItem ===values
+            }
+          })
+          console.log("tag64",_item?.sourceWorkItem ,_item?.devopsWorkItem);
+           console.log("item?.rest[_item?.sourceWorkItem]",item?.rest[_item?.sourceWorkItem]);
+           
+          if (_item?.sourceWorkItem !== "Parent Work Item" && _item?.devopsWorkItem !== "NA" && _item?.sourceWorkItem !== "Work item type" && _item?.fieldReferenceName !== "" && item?.rest[_item?.sourceWorkItem]) {
+            return  x[0]===_item?.sourceWorkItem && {columnName:_item?.sourceWorkItem,referencePath: _item?.sourceWorkItem === "Title" ? "/fields/System.Title" : _item?.sourceWorkItem === "Work item type" ? "/fields/System.WorkItemType" : `/fields/${_item?.fieldReferenceName}`,value:item?.rest[_item?.sourceWorkItem],}
+          }
+        }) 
+      
+     return {key:_fields?.key,targetTable:_fields?.targetTable,matchFiledArr};
+
+      })
+     let _workItems = fieldsWithReferncePAth.filter((currentWorkItem:any)=> {
+        return item?.rest?.["Work item type"] === currentWorkItem?.targetTable
+      })
+      
+     //return {workItemsType:}
+
+     // console.log("matchedArr",fieldsWithReferncePAth);
+
+       
+
+       console.log("_workItems",_workItems);
+    return    {item,workItems:_workItems}
+       
+    
+
+    })
+console.log("allNodes",allNodes);
+
+const generateRequestBody = allNodes?.map((node:any) => {
+  const { workItems } = node;
+  if (!workItems || workItems.length === 0) return null;
+
+  return workItems.map((item:any) => {
+    const fieldData = item.matchFiledArr.filter((_item:any) =>_item !== undefined).map((data:any) => ({
+      referencePath: data?.referencePath,
+      value: data?.value,
+      name: data?.columnName,
+    }));
+
+    return {
+      organizationUri: "https://dev.azure.com/SEERTEST2",
+      personalAccessToken: "ycccdubmt4qctkjogs4pqljhi5k5vlwlwo4csuqqs7jb6m2taheq",
+      projectName: "SEETTEST1",
+      workItemType: item.targetTable,
+      fieldData,
+    };
+  });
+}).flat();
+
+console.log("generateRequestBody", generateRequestBody);
+generateDevops(generateRequestBody[0])
 
   }
 
@@ -520,11 +569,12 @@ const setAllKeysChecked = (loadedKeys:any, {event, node}:any ) => {
 
 // Function to construct the tree recursively
 function constructTree(data:any, parentId:any) {
-  const childrenData = data.filter((item:any) => item.parentworkitem === parentId);
+  const childrenData = data.filter((item:any) => item["Parent Work Item"] === parentId);
+console.log("childrenData",childrenData);
 
   const childrenNodes = childrenData.map((child:any) => {
-    const { title, workitemid,...rest } = child;
-    const newNode = createNode(title, workitemid, rest);
+    const {  Title, workitemid,...rest } = child;
+    const newNode = createNode(Title, workitemid, child);
     newNode.children = constructTree(data, child.sequanceid);
  // Recursively construct children
     return newNode;
@@ -534,27 +584,32 @@ function constructTree(data:any, parentId:any) {
 }
 
 // Filter data to get only items without a parent (top-level nodes)
-const topLevelNodes = filteredTreeData?.filter((item:any) => !item.parentworkitem);
-const topLevelNodes2 = filteredTreeData?.filter((item:any) => item.parentworkitem);
+const topLevelNodes = filteredTreeData?.filter((item:any) => !item["Parent Work Item"]);
+const topLevelNodes2 = filteredTreeData?.filter((item:any) => item["Parent Work Item"]);
 
 const filteredData = topLevelNodes2.filter((item:any) => {
-  return !filteredTreeData?.some((otherItem:any) => otherItem.sequanceid === item.parentworkitem);
+  return !filteredTreeData?.some((otherItem:any) => otherItem.sequanceid === item["Parent Work Item"]);
 });
-console.log("");
+console.log("topLevelNodes",topLevelNodes);
+console.log("topLevelNodes2",topLevelNodes2);
 
 const _dataSource = [...topLevelNodes,...filteredData]
 
 const treeData = _dataSource.map((item:any) => {
-  const { title, workitemid,...rest } = item;
-  const newNode = createNode(title, workitemid,rest);
+  const { Title, workitemid,...rest } = item;
+  const newNode = createNode(Title, workitemid,item);
+  console.log("newNodsee",newNode);
+  
   newNode.children = constructTree(filteredTreeData, item.sequanceid);
   return newNode;
 });
 
 const convertObject = (data:any) => {
   const result = data?.map((item:any) => {
-    const { title, key } = item;
-    const newNode = { title, key, children: [] };
+  console.log("Title**",item);
+  
+    const { Title, sequanceid } = item;
+    const newNode = { Title, sequanceid, children: [] };
 
     if (item.children.length > 0) {
       newNode.children = convertObject(item?.children);
@@ -582,6 +637,7 @@ useEffect(()=> {
         // defaultSelectedKeys={['0-0-0', '0-0-1']}
         // defaultCheckedKeys={['0-0-0', '0-0-1']}
         // onSelect={onSelect}
+        selectable={false} 
         onCheck={onCheck}
         treeData={treeData}
         onLoad={setAllKeysChecked}
