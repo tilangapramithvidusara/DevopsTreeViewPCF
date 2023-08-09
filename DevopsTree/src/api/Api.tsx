@@ -445,6 +445,7 @@ export const generateDevops = async (_data?: any, isChild?:boolean) => {
         console.count("callibggggg")
         const response = await axios.post('https://seerv2sample2.azurewebsites.net/api/CreateWorkItem?code=0SSvW5ffaDcPDrMKRZIWAQLgsRkYtZM0exwE8i1Cg2UWAzFuG76JIw==',_data);
         console.log('Parent node saved:', response);
+        return response;
     }catch(error:any){
 
         console.log("eerrr",error);
